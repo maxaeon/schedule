@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Day Planner</title>
+</head>
+
+<body>
+  <header>
+    <h1><strong>Max's Day Planner</strong></h1>
+    <p>for scheduling daily tasks</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container" id="timeblock-container">
+    <!-- Timeblocks -->
+    <div class="time-block row">
+      <h4 class="hour col-sm-2">9:00 AM</h4>
+      <textarea name="description" class="description col-sm-9" id="9" cols="100" rows="1"></textarea>
+      <button class="saveBtn col-sm-1" id="save-event"><span class="oi oi-lock-locked"></span></button>
+    </div>
+    <div class="time-block row">
+      <h4 class="hour col-sm-2">10:00 AM</h4>
+      <textarea name="description" class="description col-sm-9" id="10" cols="100" rows="1"></textarea>
+      <button class="saveBtn col-sm-1" id="save-event"><span class="oi oi-lock-locked"></span></button>
+    </div>
+    <div class="time-block row">
+      <h4 class="hour col-sm-2">11:00 AM</h4>
+      <textarea name="description" class="description col-sm-9" id="11" cols="100" rows="1"></textarea>
+      <button class="saveBtn col-sm-1" id="save-event"><span class="oi oi-lock-locked"></span></button>
+    </div>
+    <div class="time-block row">
+      <h4 class="hour col-sm-2">12:00 PM</h4>
+      <textarea name="description" class="description col-sm-9" id="12" cols="100" rows="1"></textarea>
+      <button class="saveBtn col-sm-1" id="save-event"><span class="oi oi-lock-locked"></span></button>
+    </div>
+    <div class="time-block row">
+      <h4 class="hour col-sm-2">1:00 PM</h4>
+      <textarea name="description" class="description col-sm-9" id="13" cols="100" rows="1"></textarea>
+      <button class="saveBtn col-sm-1" id="save-event"><span class="oi oi-lock-locked"></span></button>
+    </div>
+    <div class="time-block row">
+      <h4 class="hour col-sm-2">2:00 PM</h4>
+      <textarea name="description" class="description col-sm-9" id="14" cols="100" rows="1"></textarea>
+      <button class="saveBtn col-sm-1" id="save-event"><span class="oi oi-lock-locked"></span></button>
+    </div>
+    <div class="time-block row">
+      <h4 class="hour col-sm-2">3:00 PM</h4>
+      <textarea name="description" class="description col-sm-9" id="15" cols="100" rows="1"></textarea>
+      <button class="saveBtn col-sm-1" id="save-event"><span class="oi oi-lock-locked"></span></button>
+    </div>
+    <div class="time-block row">
+      <h4 class="hour col-sm-2">4:00 PM</h4>
+      <textarea name="description" class="description col-sm-9" id="16" cols="100" rows="1"></textarea>
+      <button class="saveBtn col-sm-1" id="save-event"><span class="oi oi-lock-locked"></span></button>
+    </div>
+    <div class="time-block row">
+      <h4 class="hour col-sm-2">5:00 PM</h4>
+      <textarea name="description" class="description col-sm-9" id="17" cols="100" rows="1"></textarea>
+      <button class="saveBtn col-sm-1" id="save-event"><span class="oi oi-lock-locked"></span></button>
+    </div>
+    <div class="time-block row">
+      <h4 class="hour col-sm-2">6:00 PM</h4>
+      <textarea name="description" class="description col-sm-9" id="18" cols="100" rows="1"></textarea>
+      <button class="saveBtn col-sm-1" id="save-event"><span class="oi oi-lock-locked"></span></button>
+    </div>    <div class="time-block row">
+      <h4 class="hour col-sm-2">7:00 PM</h4>
+      <textarea name="description" class="description col-sm-9" id="19" cols="100" rows="1"></textarea>
+      <button class="saveBtn col-sm-1" id="save-event"><span class="oi oi-lock-locked"></span></button>
+    </div>    <div class="time-block row">
+      <h4 class="hour col-sm-2">8:00 PM</h4>
+      <textarea name="description" class="description col-sm-9" id="20" cols="100" rows="1"></textarea>
+      <button class="saveBtn col-sm-1" id="save-event"><span class="oi oi-lock-locked"></span></button>
+    </div>    <div class="time-block row">
+      <h4 class="hour col-sm-2">9:00 PM</h4>
+      <textarea name="description" class="description col-sm-9" id="21" cols="100" rows="1"></textarea>
+      <button class="saveBtn col-sm-1" id="save-event"><span class="oi oi-lock-locked"></span></button>
+    </div>
+  </div>
+<!--javascript sources-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

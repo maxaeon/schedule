@@ -1,0 +1,94 @@
+main {background-color: lightblue}
+
+h1 {color: white;
+background-color: darkblue;
+font-size: 28px}
+
+
+body {
+  flex-wrap: wrap;
+  min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    background-image: url('nightsky.jpg');
+
+    background-size: 100%;
+    background-position: 100%;
+  }
+  
+  textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+  }
+  
+  header {
+    text-align: center;
+    font-size: 20px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 15px;
+    border: 10px ridge darkred;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+
+  
+  .time-block{
+    text-align: center;
+    border-radius: 15px;
+    border: darkblue ridge 2px;
+    font-size: 14px;  
+}
+  
+  .row {
+    font-size: 14px;
+    height: 80px;
+    border-top: 2px ridge darkblue;
+  }
+  
+  .hour {
+    font-size: 14px;
+    background-color: darkred;
+    color: white;
+    border: darkblue ridge 2px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  .past {
+    font-size: 14px;
+    background-color: lightpink;
+    color:darkslategray;
+  }
+  
+  .present {
+    font-size: 14px;
+    background-color: darkred;
+    color: white;
+  }
+  
+  .future {
+    font-size: 14px;
+    background-color: lightblue;
+    color: darkblue;
+  }
+  
+  .saveBtn {
+      
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: darkred;
+    color:white;
+  }
+  
+  .saveBtn:hover {
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+    color: rgb(204, 0, 0);
+  }
